@@ -1,0 +1,36 @@
+.wrapper {
+    padding: 1em;
+    background-color: black;
+    border-radius: 1em;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button{
+    font-size: 1.4em;
+    background-color: black;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    padding: 35px;
+    color: #EEE;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #333;
+}
+
+h1.result {
+    margin-bottom: 10px;
+}
+
+.result {
+    display: flex;
+    justify-content: end;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 10px;
+    padding-right: 20px;
+}
