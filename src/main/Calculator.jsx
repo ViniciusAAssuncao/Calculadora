@@ -30,17 +30,17 @@ export default function Calculator() {
   }
 
   function calculate(d) {
-    if(operator==='+') {
-        setDisplayNum(parseFloat(oldNum) + parseFloat(displayNum));
+    if(operator ==='/') {
+        setDisplayNum(parseFloat(oldNum) / parseFloat(displayNum));
     }
-    if(operator==='-') {
-        setDisplayNum(parseFloat(oldNum) - parseFloat(displayNum));
-    }
-    if(operator==='X') {
+    if(operator ==='X') {
         setDisplayNum(parseFloat(oldNum) * parseFloat(displayNum));
     }
-    if(operator==='/') {
-        setDisplayNum(parseFloat(oldNum) / parseFloat(displayNum));
+    if(operator ==='-') {
+        setDisplayNum(parseFloat(oldNum) - parseFloat(displayNum));
+    }
+    if(operator ==='+') {
+        setDisplayNum(parseFloat(oldNum) + parseFloat(displayNum));
     }
   }
 
@@ -76,7 +76,7 @@ export default function Calculator() {
         <button onClick={displayNumber} value={3}>3</button>
         <button onClick={operatorHandler} value='+'>+</button>
         <button onClick={displayNumber} value={0}>0</button>
-        <button onClick={displayNumber} value=",">,</button>
+        <button onClick={displayNumber} value=".">,</button>
         <button onClick={calculate} value='='>=</button>
       </div>
     </div>
